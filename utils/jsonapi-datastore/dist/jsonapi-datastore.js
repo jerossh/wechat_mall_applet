@@ -105,6 +105,7 @@ var JsonApiDataStoreModel = (function () {
 
   return JsonApiDataStoreModel;
 })();
+// JsonApiDataStoreModel  结束
 
 
 
@@ -261,7 +262,7 @@ var JsonApiDataStore = (function () {
 })();
 
 
-// 导出两个
+// 导出两个可用处理函数
 if ('undefined' !== typeof module) {
   module.exports = {
     JsonApiDataStore: JsonApiDataStore,

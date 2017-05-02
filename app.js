@@ -5,14 +5,14 @@ App({
 
   // 初始化处理函数
   onLaunch: function () {
-    var that = this
-    this.store = new(jsonApi.JsonApiDataStore)
-    this.jsonModel = jsonApi.JsonApiDataStoreModel
-    this.globalData.code = wx.getStorageSync('code')
+    var that = this // 都指向 app？
+    this.store = new(jsonApi.JsonApiDataStore)  // 作用是什么？
+    this.jsonModel = jsonApi.JsonApiDataStoreModel  // 作用是什么？
+    this.globalData.code = wx.getStorageSync('code') // 这又是什么
 
     this.getUserInfo(function() {
       that.postEncryptedData(function(res){
-        that.globalData.wechatUserType = res.data.wechat_user_type
+        that.globalData.wechatUserType = res.data.wechat_user_type //  wechat_user_type 又是什么
       })
     })
     this.request({
