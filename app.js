@@ -27,9 +27,11 @@ App({
     if(this.globalData.userInfo){
       typeof cb == "function" && cb(this.globalData.userInfo)
     }else{
+
+      // 如果全局数据中，没有用户数据，则使用 wx.login 获取
       wx.login({
         success: function (res) {
-          if (res.code) {
+          if (res.code) { // f返回 code 就是成功？·
             that.globalData.code = res.code
             wx.setStorageSync('code', res.code)
             wx.getUserInfo({
