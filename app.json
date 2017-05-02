@@ -12,7 +12,7 @@
     "backgroundColor": "#f2f2f2",
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "巴爷供销社",
+    "navigationBarTitleText": "全局title名称",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
@@ -26,12 +26,6 @@
       "iconPath": "images/ba.png",
       "selectedIconPath": "images/ba_active.png",
       "text": "首页"
-    },
-    {
-      "pagePath": "pages/category/category",
-      "iconPath": "images/cart.png",
-      "selectedIconPath": "images/cart_active.png",
-      "text": "分类"
     },
     {
       "pagePath": "pages/cart/cart",

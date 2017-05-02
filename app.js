@@ -21,6 +21,7 @@ App({
     })
   },
 
+
 // 获取用户信息处理函数
   getUserInfo: function (cb) {
     var that = this
@@ -48,6 +49,7 @@ App({
       })
     }
   },
+
 
 // 请求函数封装
   request: function(obj) {
@@ -156,5 +158,6 @@ App({
     currentCustomer: null,
     // API_URL: 'http://localhost:3000',
     API_URL: 'https://rapi-staging.bayekeji.com'
+    
   }
 })

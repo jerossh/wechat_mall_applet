@@ -1,3 +1,5 @@
+// 对数组进行 hack 增加 findIndex 和 find 方法
+
 if (!Array.prototype.findIndex) {
   Object.defineProperty(Array.prototype, 'findIndex', {
     value: function(predicate) {
