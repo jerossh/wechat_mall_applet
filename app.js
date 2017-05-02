@@ -2,6 +2,8 @@ const jsonApi = require('utils/jsonapi-datastore/dist/jsonapi-datastore.js')
 require('utils/polyfill.js')
 
 App({
+
+  // 初始化处理函数
   onLaunch: function () {
     var that = this
     this.store = new(jsonApi.JsonApiDataStore)
@@ -19,6 +21,7 @@ App({
     })
   },
 
+// 获取用户信息处理函数
   getUserInfo: function (cb) {
     var that = this
     if(this.globalData.userInfo){
@@ -44,6 +47,7 @@ App({
     }
   },
 
+// 请求函数封装
   request: function(obj) {
     var header = obj.header || {}
     if (!header['Content-Type']) {
@@ -67,6 +71,7 @@ App({
     })
   },
 
+// 授权请求封装
   authRequest: function(obj) {
     var that = this
     if (!that.globalData.token) {
@@ -126,6 +131,7 @@ App({
     }
   },
 
+// 加密数据
   postEncryptedData: function (resolve) {
     this.request({
       method: 'POST',
@@ -140,6 +146,7 @@ App({
     })
   },
 
+// 全局数据
   globalData:{
     wechatUserType: 'normal',
     featureManager: {},

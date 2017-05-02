@@ -20,7 +20,7 @@
     "selectedColor": "#BF8600",
     "borderStyle": "white",
     "backgroundColor": "white",
-    "position": "top",
+    "position": "bottom",
     "list": [{
       "pagePath": "pages/index/index",
       "iconPath": "images/ba.png",

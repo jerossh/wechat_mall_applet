@@ -106,6 +106,10 @@ var JsonApiDataStoreModel = (function () {
   return JsonApiDataStoreModel;
 })();
 
+
+
+
+// 获取数据
 var JsonApiDataStore = (function () {
   /**
    * @method constructor
@@ -256,6 +260,8 @@ var JsonApiDataStore = (function () {
   return JsonApiDataStore;
 })();
 
+
+// 导出两个
 if ('undefined' !== typeof module) {
   module.exports = {
     JsonApiDataStore: JsonApiDataStore,
